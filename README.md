@@ -40,17 +40,18 @@ DATABASE DESIGN
 IMPLEMENTATION
 
 The project have 3 modules: Student Module, Admin Module, Faculty Module
-1. STUDENT MODULE
+
+STUDENT MODULE
 This module contains the student part of the application.
 
 ● Home page
   Home page consists of header,footer and services page. Header complaint
   register,login and home
-  3. Register page
+● Register page
   Students can register a new account by entering the following details:
   Upload Image, User Name, User Email, Password and Phone Number. The
   entered data will be stored in the register table in the database.
-  4. Login page
+● Login page
   Students can login to their account by entering user email and password to the
   login page
   5. Complaint page
