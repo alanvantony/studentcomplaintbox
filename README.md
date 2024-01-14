@@ -42,7 +42,7 @@ IMPLEMENTATION
 The project have 3 modules: Student Module, Admin Module, Faculty Module
 1. STUDENT MODULE
 This module contains the student part of the application.
-  1. Home page
+  ● Home page
   Home page consists of header,footer and services page. Header complaint
   register,login and home
   2. Register page
