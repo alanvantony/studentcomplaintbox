@@ -43,15 +43,14 @@ The project have 3 modules: Student Module, Admin Module, Faculty Module
 
 STUDENT MODULE
 This module contains the student part of the application.
-
-● Home page
+  1.Home page
   Home page consists of header,footer and services page. Header complaint
   register,login and home
-● Register page
+  2.Register page
   Students can register a new account by entering the following details:
   Upload Image, User Name, User Email, Password and Phone Number. The
   entered data will be stored in the register table in the database.
-● Login page
+  3.Login page
   Students can login to their account by entering user email and password to the
   login page
   5. Complaint page
@@ -65,7 +64,7 @@ This module contains the student part of the application.
   8. Logout
   Students can logout from their current account.
 
-2. FACULTY MODULE
+FACULTY MODULE
   1. Home page
   Home page consists of header,footer and services page. Header complaint
   register,login and home
@@ -85,7 +84,7 @@ This module contains the student part of the application.
   7. Logout
   Students can logout from their current account.
 
-3. ADMIN MODULE
+ADMIN MODULE
   1. Home page
   Home page consists of header,footer and services page. Header complaint
   register,login and home
