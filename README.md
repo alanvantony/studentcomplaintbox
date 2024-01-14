@@ -1,4 +1,4 @@
-# studentcomplaintbox
+# StudentComplaintBox
 Python Django Academic Project to build a Student Complaint Box
 
 **This is purely an Academic Project to learn Python Django**
