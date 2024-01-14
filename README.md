@@ -11,6 +11,7 @@ not possible to communicate with particular staff to solve issues. Grievance sys
 handled directly by Universities through their own websites.
 
 SOFTWARE REQUIREMENTS
+
 ● Python
 ● Bootstrap 5
 ● Django
