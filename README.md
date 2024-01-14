@@ -42,25 +42,26 @@ IMPLEMENTATION
 The project have 3 modules: Student Module, Admin Module, Faculty Module
 1. STUDENT MODULE
 This module contains the student part of the application.
-  ● Home page
+
+● Home page
   Home page consists of header,footer and services page. Header complaint
   register,login and home
-  2. Register page
+  3. Register page
   Students can register a new account by entering the following details:
   Upload Image, User Name, User Email, Password and Phone Number. The
   entered data will be stored in the register table in the database.
-  3. Login page
+  4. Login page
   Students can login to their account by entering user email and password to the
   login page
-  4. Complaint page
+  5. Complaint page
   Students have choices to send complaints to the trainer,HR or Operations
   head. The complaint will be sent to the respective faculty.
-  5. View acknowledgement page
+  6. View acknowledgement page
   Students can view the acknowledgements for their complaints from this page
-  6. View profile
+  7. View profile
   Details of the students can be seen in the user profile. Students can also edit
   their profile
-  7. Logout
+  8. Logout
   Students can logout from their current account.
 
 2. FACULTY MODULE
