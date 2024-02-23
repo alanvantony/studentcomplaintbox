@@ -1,16 +1,8 @@
-# StudentComplaintBox
-Python Django Academic Project to build a Student Complaint Box
+Python Django Academic Project: Building a Student Complaint Box
 
-**This is purely an Academic Project to learn Python Django**
+**This project serves as an educational endeavor aimed at learning Python Django. It is developed within a virtual environment created in Visual Studio Code.**
 
-This project is built on a virtual enviornment created in VS Code.
-
-Student satisfaction is a major concern for any educational institute. However, many times
-the students fail to express their concerns & issues or fail to reach out for proper support from
-the organisation.A Grievance may be any kind of discontent or dissatisfaction or negative perception, whether
-expressed or not. As seen nowadays it is not possible to solve particular student’s issues or it’s
-not possible to communicate with particular staff to solve issues. Grievance systems can be
-handled directly by Universities through their own websites.
+Ensuring student satisfaction is paramount for any educational institution. However, often students encounter challenges in expressing their concerns or fail to access proper support from the organization. Grievances may encompass various forms of discontent, dissatisfaction, or negative perceptions, whether articulated or not. In today's context, addressing individual student issues or facilitating direct communication with specific staff members can be challenging. Grievance systems can be effectively managed by universities through their own websites.
 
 SOFTWARE REQUIREMENTS
 
