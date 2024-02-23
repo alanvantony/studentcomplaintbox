@@ -1,0 +1,42 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}
+
+   
+<!-- Login Start -->
+<div class="container-xxl py-5" style="padding-left: 100px;background-color: rgba(232, 232, 232, 0.485);height: 500px;width: 400px;border-radius: 20px;margin-top: 60px;" >
+    <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+        <h2>StudentLogin</h2><br>
+        
+                <form id="request" class="main_form" method="POST" action="userlogin" enctype="multipart/form-data">
+
+                    {% csrf_token %}
+
+                         
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <div class="col-md-12">
+                                    <input class="contactus" placeholder="Email*" type="email" name="email" ><br><br>                          
+                                 </div> 
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input class="contactus" placeholder="Password*" type="password" name="password"> <br><br>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input class="btn btn-primary w-100 py-3" type="submit" value="submit">
+                         </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+   
+
+<!-- Contact End -->
+  
+   
+{% include 'footer.html' %}
+{% endblock %}

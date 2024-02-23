@@ -1,0 +1,58 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-12 col-xl-4">
+  
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body text-center">
+              <div class="mt-3 mb-4">
+                <img src="../media/{{res.photo}}"
+                  class="rounded-circle img-fluid" style="width: 50px;" />
+              </div>
+              <h4 class="mb-2">{{res.name}}</h4>
+              <p class="text-muted mb-4">Student<span class="mx-2">|</span> <a
+                  href="#!">ComplaintBox</a></p>
+              <div class="mb-4 pb-2">
+                <button type="button" class="btn btn-outline-primary btn-floating">
+                  <i class="fab fa-facebook-f fa-lg"></i>
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-floating">
+                  <i class="fab fa-twitter fa-lg"></i>
+                </button>
+                <button type="button" class="btn btn-outline-primary btn-floating">
+                  <i class="fab fa-skype fa-lg"></i>
+                </button>
+              </div>
+              <div>
+               <form id="request" class="main_form" method="POST" action="cupdate/{{res.id}}" enctype="multipart/form-data">
+                {% csrf_token %}
+                  
+                 <button type="submit"  class="btn btn-primary btn-rounded btn-lg">Update</button>
+               </form>
+            </div>
+              <div class="d-flex justify-content-between text-center mt-5 mb-2">
+                <div>
+                  <p class="mb-2 h5">{{res.email}}</p>
+                  <p class="text-muted mb-0">EMAIL</p>
+                </div>
+                <div class="px-3">
+                  <p class="mb-2 h5">{{res.password}}</p>
+                  <p class="text-muted mb-0">PASSWORD</p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+{% include 'footer.html' %}
+{% endblock %}

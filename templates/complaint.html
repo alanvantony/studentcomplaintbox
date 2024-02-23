@@ -1,0 +1,47 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}
+
+
+<div class="container-xxl py-5" style="padding-left: 100px;background-color: rgba(232, 232, 232, 0.485);height: 650px;width: 550px;border-radius: 20px;margin-top: 60px;" >
+    <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+<h2>ComplaintForm</h2>
+  <form id="request" class="main_form" method="POST" action="compreg" enctype="multipart/form-data">
+    {% csrf_token %}
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <label for="complaintTo">ComplaintTo:</label>
+       <select id="complaintto" name="complaintto" required>
+         <option value="">Select Department</option>
+         <option value="HR">HR</option>
+         <option value="Trainer">TRAINER</option>
+         <option value="Operations">OPERATIONS HEAD</option>
+        <!-- Add more options as needed -->
+       </select><br><br>
+
+      <label for="complaintMessage">Complaint:</label><br>
+      <textarea id="complaintmesg" name="complaintmesg" rows="4" cols="50" required></textarea><br><br>
+
+      <div class="col-md-12">
+        <button  class="btn btn-primary w-100 py-3" type="submit">SUBMIT</button>
+      </div>
+     </form>
+  </div>
+</div>
+
+
+  
+
+
+
+   
+{% include 'footer.html' %}
+{% endblock %}

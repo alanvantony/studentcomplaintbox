@@ -1,0 +1,49 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}
+
+   
+ <!-- contact -->
+ <div class="contact" >
+   <div class="container">
+      <div class="row "style="padding-left: 50px;background-color: rgba(232, 232, 232, 0.485);height: 200px;width: 400px;border-radius: 20px;margin-top: 60px;">
+         <div class="col-md-12" >
+            <div class="titlepage text_align_center" >
+               <h2>UPDATE PROFILE</h2>
+            </div>
+         </div>
+         <div class="col-md-6">
+            <form id="request" class="main_form" method="POST" action="updates/{{res.id}}">
+
+               {% csrf_token %}
+               
+              
+                  
+                  <div class="col-md-6 ">
+                     <input class="contactus" placeholder="Name*" type="type" name="name" value="{{res.name}}"> 
+                  </div>
+                  <div class="col-md-12">
+                     <input class="contactus" placeholder="Email*" type="type" name="email" value="{{res.email}}">                          
+                  </div> 
+                  <div class="col-md-12">
+                     <input class="contactus" placeholder="Phone*" type="type" name="phone" value="{{res.phone}}">                          
+                  </div>
+                  <div class="col-md-12">
+                     <input class="contactus" placeholder="Password*" type="type" name="password" value="{{res.password}}">                          
+                  </div>
+                  <div class="col-md-12">
+                     
+                     <button class="send_btn" type="submit">Update</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+         
+      </div>
+   </div>
+</div>
+<!-- contact -->
+  
+   
+{% include 'footer.html' %}Python manage.py runserver
+{% endblock %}

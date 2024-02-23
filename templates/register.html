@@ -1,0 +1,59 @@
+{% load static %}
+{% block content %}
+{% include 'header.html' %}
+
+   
+<!-- Contact Start -->
+<div class="container-xxl py-5" style="padding-left: 100px;background-color: rgba(232, 232, 232, 0.485);height: 500px;width: 400px;border-radius: 20px;margin-top: 60px;" >
+    <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+        <h2>REGISTER</h2><br>
+        
+                <form id="request" class="main_form" method="POST" action="userreg" enctype="multipart/form-data">
+
+                    {% csrf_token %}
+
+                    <div class="row g-3">
+                        <div class="col-md-6 ">
+                            <div class="form-floating">
+                            <input class="contactus" placeholder="Name*" type="file" name="photo"> <br><br>
+                         </div>
+                        </div>
+                    </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                 <input class="contactus" placeholder="Name*" type="type" name="name"> <br><br>                          
+                                 
+                            </div>
+                            
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <div class="col-md-12">
+                                    <input class="contactus" placeholder="Email*" type="type" name="email" ><br><br>                          
+                                 </div> 
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input class="contactus" placeholder="Phone*" type="type" name="phone"> <br><br>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input class="contactus" placeholder="Password*" type="type" name="password"> <br><br>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button  class="btn btn-primary w-100 py-3" type="submit">SUBMIT</button>
+                         </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+   
+
+<!-- Contact End -->
+  
+   
+{% include 'footer.html' %}
+{% endblock %}
