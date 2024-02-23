@@ -3,6 +3,8 @@ Python Django Academic Project to build a Student Complaint Box
 
 **This is purely an Academic Project to learn Python Django**
 
+This project is built on a virtual enviornment created in VS Code.
+
 Student satisfaction is a major concern for any educational institute. However, many times
 the students fail to express their concerns & issues or fail to reach out for proper support from
 the organisation.A Grievance may be any kind of discontent or dissatisfaction or negative perception, whether
